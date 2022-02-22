@@ -11,6 +11,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Change environment
-        run: ./change_github_path.sh
+        run: sudo ./change_github_path.sh
       - name: Check path changed
         run: ./check_github_path.sh
