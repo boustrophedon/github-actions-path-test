@@ -1,3 +1,4 @@
 #!/bin/bash
 
-grep "hello" <(echo $GITHUB_PATH)
+echo "$PATH"
+grep "hello" <(echo $PATH)
