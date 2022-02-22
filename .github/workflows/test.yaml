@@ -1,0 +1,13 @@
+name: test
+on:
+  push:
+    branches:
+      - master
+jobs:
+  run-script:
+    name: Run test script to change path
+    steps:
+      - name: Change environment
+        run: ./change_github_path.sh
+      - name: Check path changed
+        run: ./check_github_path.sh
