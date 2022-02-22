@@ -1,4 +1,10 @@
 #!/bin/bash
 
-echo "$PATH"
-grep "hello" <(echo $PATH)
+echo "path: $PATH"
+grep "mytmpdir" <(echo $PATH)
+
+echo "ls output"
+ls /tmp/mytmpdir*
+
+echo "which output"
+which hello
